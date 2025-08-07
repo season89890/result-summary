@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-[var(--Paleblue)] md:h-screen flex justify-center items-center"
+  >
+    <section class="md:max-w-3xl rounded-3xl bg-white">
+      <div class="flex flex-col md:flex-row justify-center items-center">
+        <div
+          class="rounded-b-3xl md:rounded-3xl md:w-[50%] bg-linear-to-b from-[var(--Lightslateblue)] to-[var(--Lightroyalblue)]"
+        >
+          <p class="text-white text-center text-xl mt-20px p-10 font-bold">
+            Your Results
+          </p>
+          <div
+            class="rounded-full bg-linear-to-t from-[var(--Lightslateblue)] to-[var(--Lightroyalblue)] w-[150px] h-[150px] flex justify-center items-center flex-col mx-auto"
+          >
+            <h1 class="text-white font-bold text-5xl">76</h1>
+            <p class="text-white">of 100</p>
+          </div>
+          <h1 class="text-white text-3xl text-center mt-5 font-bold">Great</h1>
+          <p class="text-white text-sm text-center p-10">
+            you scored higher than 65% of the people who have taken these tests
+          </p>
+        </div>
+        <div class="md:w-[50%] px-15 py-5">
+          <h1 class="text-3xl font-bold mb-5">Summary</h1>
+          <div class="bg-red-50 mb-5 rounded-2xl flex justify-between p-3">
+            <div class="flex justify-between gap-2">
+              <img src="assets/images/icon-reaction.svg" alt="" />
+            <h1 class="text-[var(--Lightred)]">Reaction</h1>
+            </div>
+            <p>80 <span class="text-[var(--Lightlavender)]">/100</span></p>
+          </div>
+          <div class="bg-yellow-50 mb-5 rounded-2xl flex justify-between p-3">
+            <div class="flex justify-between gap-2">
+              <img src="assets/images/icon-memory.svg" alt="" />
+              <h1>Memory</h1>
+            </div>
+
+            <p>92 <span class="text-[(--Lightlavender)]">/100</span></p>
+          </div>
+          <div class="bg-green-50 mb-5 rounded-2xl flex justify-between p-3">
+            <div class="flex justify-between gap-2">
+              <img src="assets/images/icon-verbal.svg" alt="" />
+              <h1>Verbal</h1>
+            </div>
+            <p>61 <span class="--Lightlavender">/100</span></p>
+          </div>
+          <div class="bg-blue-50 mb-5 rounded-2xl flex justify-between p-3">
+            <div class="flex justify-between gap-2">
+              <img src="assets/images/icon-visual.svg" alt="" />
+            <h1>Visual</h1>
+            </div>
+            <p>73 <span class="--Lightlavender">/100</span></p>
+          </div>
+          <button
+            class="bg-[var(--Darkgrayblue)] text-white w-full rounded-2xl p-3"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
